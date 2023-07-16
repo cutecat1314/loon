@@ -1,0 +1,11 @@
+#!name=建行生活签到
+#!desc=建行生活定时签到
+#!author=Zoo
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg
+[Script]
+cron "40 8 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ccbLifeSignIn.js, timeout=300, tag=建行生活签到
+#cookie获取成功后请禁用
+http-response https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode\=A3341A040 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ccbLifeCookie.js, requires-body=true, timeout=10, tag=建行生活签到cookie
+
+[MITM]
+ hostname = yunbusiness.ccb.com

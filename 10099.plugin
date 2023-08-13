@@ -1,5 +1,6 @@
 #!name=广电通知
 #!author=wuhuhuuuu
+#!icon=https://github.com/wuhuhuuuu/study/raw/main/Scripts/10099/10099.png
 [MITM]
 hostname = wx.10099.com.cn
 [Script]
